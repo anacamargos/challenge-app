@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		825158137D1ADF696F4A7C2B /* Pods_ChallengeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9B0B49610475A17966C314 /* Pods_ChallengeApp.framework */; };
 		ED89E30F2224526F005D93DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E30E2224526F005D93DD /* AppDelegate.swift */; };
 		ED89E3112224526F005D93DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E3102224526F005D93DD /* ViewController.swift */; };
 		ED89E3142224526F005D93DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED89E3122224526F005D93DD /* Main.storyboard */; };
@@ -14,6 +15,17 @@
 		ED89E31922245270005D93DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED89E31722245270005D93DD /* LaunchScreen.storyboard */; };
 		ED89E32422245270005D93DD /* ChallengeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E32322245270005D93DD /* ChallengeAppTests.swift */; };
 		ED89E32F22245270005D93DD /* ChallengeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E32E22245270005D93DD /* ChallengeAppUITests.swift */; };
+		ED89E33F22245B34005D93DD /* Open_Sans in Resources */ = {isa = PBXBuildFile; fileRef = ED89E33E22245B34005D93DD /* Open_Sans */; };
+		ED89E342222475D3005D93DD /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E341222475D3005D93DD /* BaseView.swift */; };
+		ED89E3462224768C005D93DD /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E3452224768C005D93DD /* DetailsView.swift */; };
+		ED89E348222486A1005D93DD /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E347222486A1005D93DD /* DetailsViewController.swift */; };
+		ED89E34C22248834005D93DD /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E34B22248834005D93DD /* ListViewController.swift */; };
+		ED89E35022248952005D93DD /* RestaurantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E34F22248952005D93DD /* RestaurantCollectionViewCell.swift */; };
+		ED89E35222248ECA005D93DD /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E35122248ECA005D93DD /* FirstView.swift */; };
+		ED89E35422248EF9005D93DD /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E35322248EF9005D93DD /* SecondView.swift */; };
+		ED89E35922249BC4005D93DD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = ED89E35822249BC4005D93DD /* Podfile */; };
+		ED89E35C2224A203005D93DD /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E35B2224A203005D93DD /* NetworkServices.swift */; };
+		ED89E35E2224AB61005D93DD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E35D2224AB61005D93DD /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81A4B63F63A13C5D6FBFEB98 /* Pods-ChallengeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeApp.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeApp/Pods-ChallengeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8E9B0B49610475A17966C314 /* Pods_ChallengeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76328F7280F4540A928DAD7 /* Pods-ChallengeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeApp.release.xcconfig"; path = "Target Support Files/Pods-ChallengeApp/Pods-ChallengeApp.release.xcconfig"; sourceTree = "<group>"; };
 		ED89E30B2224526F005D93DD /* ChallengeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED89E30E2224526F005D93DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED89E3102224526F005D93DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +62,17 @@
 		ED89E32A22245270005D93DD /* ChallengeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED89E32E22245270005D93DD /* ChallengeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeAppUITests.swift; sourceTree = "<group>"; };
 		ED89E33022245270005D93DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED89E33E22245B34005D93DD /* Open_Sans */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Open_Sans; path = ../../../../Downloads/Open_Sans; sourceTree = "<group>"; };
+		ED89E341222475D3005D93DD /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		ED89E3452224768C005D93DD /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		ED89E347222486A1005D93DD /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		ED89E34B22248834005D93DD /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		ED89E34F22248952005D93DD /* RestaurantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCollectionViewCell.swift; sourceTree = "<group>"; };
+		ED89E35122248ECA005D93DD /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		ED89E35322248EF9005D93DD /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		ED89E35822249BC4005D93DD /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		ED89E35B2224A203005D93DD /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		ED89E35D2224AB61005D93DD /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825158137D1ADF696F4A7C2B /* Pods_ChallengeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +101,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29132E2A44AECACFEC0B855D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E9B0B49610475A17966C314 /* Pods_ChallengeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2A8F1B2B4B6F46A773FF640 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81A4B63F63A13C5D6FBFEB98 /* Pods-ChallengeApp.debug.xcconfig */,
+				E76328F7280F4540A928DAD7 /* Pods-ChallengeApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ED89E3022224526F005D93DD = {
 			isa = PBXGroup;
 			children = (
+				ED89E35822249BC4005D93DD /* Podfile */,
+				ED89E33E22245B34005D93DD /* Open_Sans */,
 				ED89E30D2224526F005D93DD /* ChallengeApp */,
 				ED89E32222245270005D93DD /* ChallengeAppTests */,
 				ED89E32D22245270005D93DD /* ChallengeAppUITests */,
 				ED89E30C2224526F005D93DD /* Products */,
+				A2A8F1B2B4B6F46A773FF640 /* Pods */,
+				29132E2A44AECACFEC0B855D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +145,8 @@
 		ED89E30D2224526F005D93DD /* ChallengeApp */ = {
 			isa = PBXGroup;
 			children = (
+				ED89E35A2224A1F3005D93DD /* Services */,
+				ED89E34022247590005D93DD /* Screens */,
 				ED89E30E2224526F005D93DD /* AppDelegate.swift */,
 				ED89E3102224526F005D93DD /* ViewController.swift */,
 				ED89E3122224526F005D93DD /* Main.storyboard */,
@@ -125,6 +175,61 @@
 			path = ChallengeAppUITests;
 			sourceTree = "<group>";
 		};
+		ED89E34022247590005D93DD /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				ED89E34922248707005D93DD /* List */,
+				ED89E34322247654005D93DD /* Details */,
+				ED89E341222475D3005D93DD /* BaseView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		ED89E34322247654005D93DD /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				ED89E34422247665005D93DD /* Views */,
+				ED89E347222486A1005D93DD /* DetailsViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		ED89E34422247665005D93DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED89E3452224768C005D93DD /* DetailsView.swift */,
+				ED89E35122248ECA005D93DD /* FirstView.swift */,
+				ED89E35322248EF9005D93DD /* SecondView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED89E34922248707005D93DD /* List */ = {
+			isa = PBXGroup;
+			children = (
+				ED89E34A22248828005D93DD /* Views */,
+				ED89E34B22248834005D93DD /* ListViewController.swift */,
+				ED89E35D2224AB61005D93DD /* Models.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		ED89E34A22248828005D93DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED89E34F22248952005D93DD /* RestaurantCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED89E35A2224A1F3005D93DD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED89E35B2224A203005D93DD /* NetworkServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED89E33322245270005D93DD /* Build configuration list for PBXNativeTarget "ChallengeApp" */;
 			buildPhases = (
+				9187AD19BF0CFD9C35115D6D /* [CP] Check Pods Manifest.lock */,
 				ED89E3072224526F005D93DD /* Sources */,
 				ED89E3082224526F005D93DD /* Frameworks */,
 				ED89E3092224526F005D93DD /* Resources */,
+				422CCE15DDE6D06561F1E88E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,9 +336,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED89E35922249BC4005D93DD /* Podfile in Resources */,
 				ED89E31922245270005D93DD /* LaunchScreen.storyboard in Resources */,
 				ED89E31622245270005D93DD /* Assets.xcassets in Resources */,
 				ED89E3142224526F005D93DD /* Main.storyboard in Resources */,
+				ED89E33F22245B34005D93DD /* Open_Sans in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +360,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		422CCE15DDE6D06561F1E88E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeApp/Pods-ChallengeApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallengeApp/Pods-ChallengeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9187AD19BF0CFD9C35115D6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED89E3072224526F005D93DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED89E35E2224AB61005D93DD /* Models.swift in Sources */,
+				ED89E35C2224A203005D93DD /* NetworkServices.swift in Sources */,
+				ED89E3462224768C005D93DD /* DetailsView.swift in Sources */,
+				ED89E342222475D3005D93DD /* BaseView.swift in Sources */,
+				ED89E34C22248834005D93DD /* ListViewController.swift in Sources */,
+				ED89E35422248EF9005D93DD /* SecondView.swift in Sources */,
 				ED89E3112224526F005D93DD /* ViewController.swift in Sources */,
 				ED89E30F2224526F005D93DD /* AppDelegate.swift in Sources */,
+				ED89E35222248ECA005D93DD /* FirstView.swift in Sources */,
+				ED89E348222486A1005D93DD /* DetailsViewController.swift in Sources */,
+				ED89E35022248952005D93DD /* RestaurantCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +601,7 @@
 		};
 		ED89E33422245270005D93DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A4B63F63A13C5D6FBFEB98 /* Pods-ChallengeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +619,7 @@
 		};
 		ED89E33522245270005D93DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E76328F7280F4540A928DAD7 /* Pods-ChallengeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
