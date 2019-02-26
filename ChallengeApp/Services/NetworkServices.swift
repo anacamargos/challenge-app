@@ -10,7 +10,7 @@ import Foundation
 import Moya
 
 enum HotmartService {
-    enum BusinessesProvider: TargetType {
+    enum ListLocationsProvider: TargetType {
         
         case search()
         

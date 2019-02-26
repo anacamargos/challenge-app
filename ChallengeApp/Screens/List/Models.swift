@@ -9,11 +9,11 @@
 import Foundation
 
 struct Root: Codable {
-    let businesses: [Business]
+    let listLocations: [ListLocations]
 }
 
-struct Business: Codable {
-    let id: String
+struct ListLocations: Codable {
+    let id: Int
     let name: String
     //let imageUrl: URL
     let type: String
@@ -25,16 +25,16 @@ struct RestaurantListViewModel {
     //let imageUrl: URL
     let type: String
     let review: Double
-    let id: String //ou int?
+    let id: Int //ou int?
 }
 
 extension RestaurantListViewModel {
-    init(business: Business) {
-        self.name = business.name
-        self.id = business.id
-        //self.imageUrl = business.imageUrl
-        self.type = business.type
-        self.review = business.review
+    init(listLocations: ListLocations) {
+        self.name = listLocations.name
+        self.id = listLocations.id
+        //self.imageUrl = listLocations
+        self.type = listLocations.type
+        self.review = listLocations.review
         
     }
 }

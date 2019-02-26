@@ -77,7 +77,7 @@
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K8V-JM-mBg">
                                                             <rect key="frame" x="0.0" y="0.0" width="157" height="152"/>
-                                                            <color key="backgroundColor" red="1" green="0.63577738886650548" blue="0.99915055063121139" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="152" id="Gvk-1a-kuT"/>
                                                             </constraints>
@@ -536,7 +536,7 @@
         <!--Navigation Controller-->
         <scene sceneID="UUN-gl-Ksd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s5X-tj-72u" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RestaurantNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="s5X-tj-72u" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="homeOn" landscapeImage="homeOff" selectedImage="homeOn" id="Qb4-jY-QUj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F35-gC-cGn">
