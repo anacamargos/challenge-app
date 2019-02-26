@@ -9,32 +9,23 @@
 import Foundation
 
 struct Root: Codable {
-    let listLocations: [ListLocations]
+    let listLocations: [Location]
 }
 
-struct ListLocations: Codable {
+struct Location: Codable {
     let id: Int
     let name: String
-    //let imageUrl: URL
     let type: String
     let review: Double
 }
 
-struct RestaurantListViewModel {
+struct Details: Decodable {
+    let id: Int
     let name: String
-    //let imageUrl: URL
-    let type: String
     let review: Double
-    let id: Int //ou int?
+    let type: String
+    let about: String
+    let phone: String
+    let adress: String
 }
 
-extension RestaurantListViewModel {
-    init(listLocations: ListLocations) {
-        self.name = listLocations.name
-        self.id = listLocations.id
-        //self.imageUrl = listLocations
-        self.type = listLocations.type
-        self.review = listLocations.review
-        
-    }
-}

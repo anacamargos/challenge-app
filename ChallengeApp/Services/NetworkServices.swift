@@ -13,6 +13,7 @@ enum HotmartService {
     enum ListLocationsProvider: TargetType {
         
         case search()
+        case details(id: Int)
         
         var baseURL: URL {
             return URL(string: "https://hotmart-mobile-app.herokuapp.com")!
@@ -22,6 +23,8 @@ enum HotmartService {
             switch self  {
             case .search:
                 return "/locations"
+            case let .details(id):
+                return "/locations/\(id)"
             }
         }
         
@@ -36,6 +39,8 @@ enum HotmartService {
         var task: Task {
             switch self {
             case .search():
+                return .requestPlain
+            case .details:
                 return .requestPlain
             }
         }

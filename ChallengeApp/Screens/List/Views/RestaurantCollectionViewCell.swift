@@ -22,13 +22,14 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var starFour: UIImageView!
     @IBOutlet weak var starFive: UIImageView!
     
-    func configure (with viewModel: RestaurantListViewModel) {
-        //imageView.af_setImage(withURL: viewModel.imageUrl)
-        nameLabel.text = viewModel.name
-        typeLabel.text = viewModel.type
-        ratingLabel.text = "\(viewModel.review)"
+    func configure(location: Location) {
         
-        rating(review: viewModel.review)
+        nameLabel.text = location.name
+        typeLabel.text = location.type
+        ratingLabel.text = "\(location.review)"
+        rating(review: location.review)
+        
+        imageView.image = UIImage(url: URL(string: "https://pt.sonestapiyucay.com/cache/a3/a1/a3a1b928b1029b9dc5921a120819fefc.jpg"))!
     }
     
     func rating(review: Double) {
@@ -86,4 +87,19 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
 
     }
     
+}
+
+
+extension UIImage {
+    convenience init?(url: URL?) {
+        guard let url = url else { return nil }
+        
+        do {
+            let data = try Data(contentsOf: url)
+            self.init(data: data)
+        } catch {
+            print("Cannot load image from url: \(url) with error: \(error)")
+            return nil
+        }
+    }
 }

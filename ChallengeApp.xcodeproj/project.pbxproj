@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		825158137D1ADF696F4A7C2B /* Pods_ChallengeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9B0B49610475A17966C314 /* Pods_ChallengeApp.framework */; };
-		BFC191982224CC3F002B6BA6 /* Open_Sans in Resources */ = {isa = PBXBuildFile; fileRef = BFC191972224CC3F002B6BA6 /* Open_Sans */; };
+		ED243BD822259CA4001E9950 /* Open_Sans in Resources */ = {isa = PBXBuildFile; fileRef = ED243BD722259CA4001E9950 /* Open_Sans */; };
 		ED89E30F2224526F005D93DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E30E2224526F005D93DD /* AppDelegate.swift */; };
 		ED89E3112224526F005D93DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E3102224526F005D93DD /* ViewController.swift */; };
 		ED89E3142224526F005D93DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED89E3122224526F005D93DD /* Main.storyboard */; };
@@ -48,8 +48,8 @@
 /* Begin PBXFileReference section */
 		81A4B63F63A13C5D6FBFEB98 /* Pods-ChallengeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeApp.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeApp/Pods-ChallengeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8E9B0B49610475A17966C314 /* Pods_ChallengeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFC191972224CC3F002B6BA6 /* Open_Sans */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Open_Sans; path = ../../../../../../Downloads/Open_Sans; sourceTree = "<group>"; };
 		E76328F7280F4540A928DAD7 /* Pods-ChallengeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeApp.release.xcconfig"; path = "Target Support Files/Pods-ChallengeApp/Pods-ChallengeApp.release.xcconfig"; sourceTree = "<group>"; };
+		ED243BD722259CA4001E9950 /* Open_Sans */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Open_Sans; path = ../../../../Downloads/Open_Sans; sourceTree = "<group>"; };
 		ED89E30B2224526F005D93DD /* ChallengeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED89E30E2224526F005D93DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED89E3102224526F005D93DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				ED89E35822249BC4005D93DD /* Podfile */,
-				BFC191972224CC3F002B6BA6 /* Open_Sans */,
+				ED243BD722259CA4001E9950 /* Open_Sans */,
 				ED89E30D2224526F005D93DD /* ChallengeApp */,
 				ED89E32222245270005D93DD /* ChallengeAppTests */,
 				ED89E32D22245270005D93DD /* ChallengeAppUITests */,
@@ -339,8 +339,8 @@
 				ED89E35922249BC4005D93DD /* Podfile in Resources */,
 				ED89E31922245270005D93DD /* LaunchScreen.storyboard in Resources */,
 				ED89E31622245270005D93DD /* Assets.xcassets in Resources */,
+				ED243BD822259CA4001E9950 /* Open_Sans in Resources */,
 				ED89E3142224526F005D93DD /* Main.storyboard in Resources */,
-				BFC191982224CC3F002B6BA6 /* Open_Sans in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
