@@ -1,19 +1,18 @@
 //
-//  RestaurantCollectionViewCell.swift
+//  DetailHeaderCell.swift
 //  ChallengeApp
 //
-//  Created by Ana Leticia Camargos on 25/02/19.
+//  Created by Ana Leticia Camargos on 27/02/19.
 //  Copyright © 2019 Ana Leticia Camargos. All rights reserved.
 //
 
+import Foundation
 import UIKit
-import AlamofireImage
 
-class RestaurantCollectionViewCell: UICollectionViewCell {
+class DetailHeaderCell: UITableViewCell {
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var restaurantImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
     
     @IBOutlet weak var starOne: UIImageView!
@@ -22,14 +21,14 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var starFour: UIImageView!
     @IBOutlet weak var starFive: UIImageView!
     
-    func configure(location: Location) {
+    func configure(details: Details) {
         
-        nameLabel.text = location.name
-        typeLabel.text = location.type
-        ratingLabel.text = "\(location.review)"
-        rating(review: location.review)
+        nameLabel.text = details.name
+        //typeLabel.text = location.type
+        ratingLabel.text = "\(details.review)"
+        rating(review: details.review)
         
-        imageView.image = UIImage(url: URL(string: "https://pt.sonestapiyucay.com/cache/a3/a1/a3a1b928b1029b9dc5921a120819fefc.jpg"))!
+        restaurantImage.image = UIImage(url: URL(string: "https://pt.sonestapiyucay.com/cache/a3/a1/a3a1b928b1029b9dc5921a120819fefc.jpg"))!
     }
     
     func rating(review: Double) {
@@ -84,22 +83,9 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         self.starFour.image = UIImage(named: imageNameFour)
         self.starFive.image = UIImage(named: imageNameFive)
         
-
+        
     }
     
-}
-
-
-extension UIImage {
-    convenience init?(url: URL?) {
-        guard let url = url else { return nil }
-        
-        do {
-            let data = try Data(contentsOf: url)
-            self.init(data: data)
-        } catch {
-            print("Cannot load image from url: \(url) with error: \(error)")
-            return nil
-        }
-    }
+    
+    
 }

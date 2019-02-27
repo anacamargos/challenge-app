@@ -19,7 +19,7 @@ struct Location: Codable {
     let review: Double
 }
 
-struct Details: Decodable {
+struct Details: Codable {
     let id: Int
     let name: String
     let review: Double
@@ -27,5 +27,22 @@ struct Details: Decodable {
     let about: String
     let phone: String
     let adress: String
+    let schedule: Schedule
+}
+
+
+struct Schedule: Codable {
+    let monday: Day?
+    let tuesday: Day?
+    let wednesday: Day?
+    let thursday: Day?
+    let friday: Day?
+    let saturday: Day?
+    let sunday: Day?
+}
+
+struct Day: Codable {
+    let open: String
+    let close: String
 }
 

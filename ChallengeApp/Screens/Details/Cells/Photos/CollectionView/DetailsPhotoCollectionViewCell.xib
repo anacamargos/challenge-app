@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="FMC-pf-r3P" customClass="DetailsPhotoCollectionViewCell" customModule="ChallengeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="101" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="101" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y9t-SD-Fhw">
+                        <rect key="frame" x="0.0" y="0.0" width="101" height="90"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Y9t-SD-Fhw" firstAttribute="top" secondItem="FMC-pf-r3P" secondAttribute="top" id="0Lp-my-G0O"/>
+                <constraint firstItem="Y9t-SD-Fhw" firstAttribute="leading" secondItem="FMC-pf-r3P" secondAttribute="leading" id="1Zi-5E-Qo2"/>
+                <constraint firstAttribute="bottom" secondItem="Y9t-SD-Fhw" secondAttribute="bottom" id="Nt0-sr-Lc6"/>
+                <constraint firstAttribute="trailing" secondItem="Y9t-SD-Fhw" secondAttribute="trailing" id="oFb-Ir-gfy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Lwd-mv-BIi"/>
+            <size key="customSize" width="101" height="90"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="restaurantImageView" destination="Y9t-SD-Fhw" id="eFL-w8-QL6"/>
+            </connections>
+            <point key="canvasLocation" x="-42.399999999999999" y="42.278860569715143"/>
+        </collectionViewCell>
+    </objects>
+</document>

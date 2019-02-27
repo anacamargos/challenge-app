@@ -18,7 +18,6 @@ class ListViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     var locations = [Location] ( ) {
         didSet  {
-            //print(viewModels)
             collectionView.reloadData()
         }
     }
@@ -86,7 +85,6 @@ class ListViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         return cell
     }
-    
 }
 
 extension ListViewController: UICollectionViewDelegateFlowLayout {
@@ -99,6 +97,5 @@ extension ListViewController: UICollectionViewDelegateFlowLayout {
         
         return CGSize(width: ( width/numberOfColumns) - (xInsets + cellSpacing), height: 252)
     }
-    
 }
 

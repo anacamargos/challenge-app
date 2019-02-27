@@ -8,11 +8,13 @@
 
 import UIKit
 
-@IBDesignable class SecondView: BaseView {
+@IBDesignable class SecondView: UIView {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var aboutLabel: UITextView!
     @IBOutlet weak var hoursLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
+    
+    
 }
