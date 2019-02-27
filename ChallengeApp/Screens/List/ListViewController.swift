@@ -22,7 +22,7 @@ class ListViewController: UIViewController, UICollectionViewDelegate, UICollecti
             collectionView.reloadData()
         }
     }
-    var selectedLocation: Location!
+    var selectedLocationId: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,12 +52,12 @@ class ListViewController: UIViewController, UICollectionViewDelegate, UICollecti
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetails" {
             let vc = segue.destination as! DetailsViewController
-            vc.location = selectedLocation
+            vc.locationId = selectedLocationId
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        selectedLocation = locations[indexPath.row]
+        selectedLocationId = locations[indexPath.row].id
         self.performSegue(withIdentifier: "showDetails", sender: nil)
     }
     
@@ -69,7 +69,7 @@ class ListViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RestaurantCell", for: indexPath) as! RestaurantCollectionViewCell
         let location = locations[indexPath.row]
-        print("\n\n\n \(location)")
+        //print("\n\n\n \(location)")
         cell.configure(location: location)
         
         cell.contentView.layer.cornerRadius = 16

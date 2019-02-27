@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import Moya
 
 class DetailsViewController: UIViewController {
     
     @IBOutlet weak var detailsView: DetailsView!
     
-    var location: Location! {
+    let service = MoyaProvider<HotmartService.ListLocationsProvider>()
+    let jsonDecoder = JSONDecoder()
+    //let detailsData: Details!
+    
+    var locationId: Int! {
         didSet {
             updateView()
         }
@@ -24,37 +29,27 @@ class DetailsViewController: UIViewController {
     }
     
     func updateView() {
-        if let location = location {
-            detailsView.firstView.nameLabel.text = location.name
-            detailsView.firstView.ratingLabel.text = "\(location.review)"
-        }
         
-//        if let viewModel = viewModel {
-//            detailsView.firstView.nameLabel.text = viewModel.name
-//            detailsView.firstView.ratingLabel.text = "\(viewModel.review)"
-//
-//            detailsView.secondView.aboutLabel.text = viewModel.about
-//            detailsView.secondView.phoneLabel.text = viewModel.phone
-//            detailsView.secondView.addressLabel.text = viewModel.adress
-//            detailsView.imageView.image = UIImage (url: viewModel.imageURL)!
-//        }
+        // Carregar a lista
+        //loadDetails(withId: locationId)
+        loadDetails(withId: locationId)
+        
+
+        
     }
     
     private func loadDetails(withId id: Int) {
-//        service.request(.details(id: id)) { [weak self] (result) in
-//            switch result {
-//            case .success(let response):
-//                guard let strongSelf = self else { return }
-//                
-//                if let details = try? strongSelf.jsonDecoder.decode(Details.self, from: response.data) {
-//                    let detailsViewModel = DetailsViewModel(details: details)
-//                    (strongSelf.navigationController?.topViewController as? DetailsViewController)?.viewModel = detailsViewModel
-//                }
-//                
-//                
-//            case .failure(let error):
-//                print("Error: \(error)")
-//            }
-//        }
+        service.request(.details(id: id)) { [weak self] (result) in
+            switch result {
+            case .success(let response):
+                
+                let details = try? self?.jsonDecoder.decode(Details.self, from: response.data)
+                //let detailsData = try? Details(from: details as! Decoder)
+
+                self?.detailsView.firstView.nameLabel.text = details!?.name
+            case .failure(let error):
+                print("Error: \(error)")
+            }
+        }
     }
 }
