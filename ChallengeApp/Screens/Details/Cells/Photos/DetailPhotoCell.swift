@@ -41,7 +41,7 @@ class DetailPhotoCell: UITableViewCell, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -50,8 +50,5 @@ class DetailPhotoCell: UITableViewCell, UICollectionViewDataSource, UICollection
         cell.restaurantImageView.image = images[indexPath.row]
         return cell
     }
-    //cellForItemAtIndexPath
-    
-
 
 }

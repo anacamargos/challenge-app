@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		825158137D1ADF696F4A7C2B /* Pods_ChallengeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9B0B49610475A17966C314 /* Pods_ChallengeApp.framework */; };
-		ED6F82CD2226F4F500F37491 /* Open_Sans in Resources */ = {isa = PBXBuildFile; fileRef = ED6F82CC2226F4F500F37491 /* Open_Sans */; };
+		BFA8960322276129002123B6 /* Open_Sans in Resources */ = {isa = PBXBuildFile; fileRef = BFA8960222276129002123B6 /* Open_Sans */; };
 		ED6F82D22227269700F37491 /* DetailHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED6F82D12227269700F37491 /* DetailHeaderCell.xib */; };
 		ED6F82D4222726B900F37491 /* DetailHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6F82D3222726B900F37491 /* DetailHeaderCell.swift */; };
 		ED6F82DA22272D5900F37491 /* DetailPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED6F82D922272D5900F37491 /* DetailPhotoCell.xib */; };
@@ -51,8 +51,8 @@
 /* Begin PBXFileReference section */
 		81A4B63F63A13C5D6FBFEB98 /* Pods-ChallengeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeApp.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeApp/Pods-ChallengeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8E9B0B49610475A17966C314 /* Pods_ChallengeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA8960222276129002123B6 /* Open_Sans */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Open_Sans; path = ../../../../../../Downloads/Open_Sans; sourceTree = "<group>"; };
 		E76328F7280F4540A928DAD7 /* Pods-ChallengeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeApp.release.xcconfig"; path = "Target Support Files/Pods-ChallengeApp/Pods-ChallengeApp.release.xcconfig"; sourceTree = "<group>"; };
-		ED6F82CC2226F4F500F37491 /* Open_Sans */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Open_Sans; path = ../../../../Downloads/Open_Sans; sourceTree = "<group>"; };
 		ED6F82D12227269700F37491 /* DetailHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHeaderCell.xib; sourceTree = "<group>"; };
 		ED6F82D3222726B900F37491 /* DetailHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderCell.swift; sourceTree = "<group>"; };
 		ED6F82D922272D5900F37491 /* DetailPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailPhotoCell.xib; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 		ED89E3022224526F005D93DD = {
 			isa = PBXGroup;
 			children = (
-				ED6F82CC2226F4F500F37491 /* Open_Sans */,
+				BFA8960222276129002123B6 /* Open_Sans */,
 				ED89E30D2224526F005D93DD /* ChallengeApp */,
 				ED89E32222245270005D93DD /* ChallengeAppTests */,
 				ED89E32D22245270005D93DD /* ChallengeAppUITests */,
@@ -380,11 +380,11 @@
 				ED89E31922245270005D93DD /* LaunchScreen.storyboard in Resources */,
 				ED89E31622245270005D93DD /* Assets.xcassets in Resources */,
 				ED6F82E4222744E300F37491 /* DetailsPhotoCollectionViewCell.xib in Resources */,
-				ED6F82CD2226F4F500F37491 /* Open_Sans in Resources */,
 				ED6F82E022272FC100F37491 /* DetailAboutCell.xib in Resources */,
 				ED6F82DA22272D5900F37491 /* DetailPhotoCell.xib in Resources */,
 				ED89E3142224526F005D93DD /* Main.storyboard in Resources */,
 				ED6F82D22227269700F37491 /* DetailHeaderCell.xib in Resources */,
+				BFA8960322276129002123B6 /* Open_Sans in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

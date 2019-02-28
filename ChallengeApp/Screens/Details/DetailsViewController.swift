@@ -54,7 +54,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
             case .success(let response):
                 
                 if let details = try? self?.jsonDecoder.decode(Details.self, from: response.data) {
-                    print("\n\n\n Details aqui: \(details)")
+                    //print("\n\n\n Details aqui: \(details)")
                     callBack(details)
                     //debugPrint(details)
                 } else {

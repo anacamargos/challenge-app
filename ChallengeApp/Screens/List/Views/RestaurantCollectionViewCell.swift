@@ -83,8 +83,6 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         self.starThree.image = UIImage(named: imageNameThree)
         self.starFour.image = UIImage(named: imageNameFour)
         self.starFive.image = UIImage(named: imageNameFive)
-        
-
     }
     
 }
