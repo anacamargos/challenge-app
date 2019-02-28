@@ -16,7 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailPhotoCell" rowHeight="150" id="2V4-mw-g9m" customClass="DetailPhotoCell" customModule="ChallengeApp" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DetailPhotoCell" rowHeight="150" id="2V4-mw-g9m" customClass="DetailPhotoCell" customModule="ChallengeApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="584" height="150"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2V4-mw-g9m" id="Lmy-xx-jYY">
@@ -24,14 +24,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOTOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uM-18-tdv">
-                        <rect key="frame" x="32" y="28" width="51" height="22"/>
+                        <rect key="frame" x="32" y="28" width="51" height="37.5"/>
                         <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
                         <color key="textColor" red="0.078431372550000003" green="0.67843137249999996" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="LZA-kv-S7b">
-                        <rect key="frame" x="28" y="66" width="556" height="60"/>
-                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <rect key="frame" x="28" y="81.5" width="556" height="60"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="rhJ-Dm-xh2"/>
                         </constraints>
@@ -41,9 +40,14 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="Fda-C4-AgA"/>
+                            <outlet property="delegate" destination="-1" id="fKG-la-gn8"/>
+                        </connections>
                     </collectionView>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="LZA-kv-S7b" secondAttribute="bottom" constant="8" id="DcL-v6-l1H"/>
                     <constraint firstItem="LZA-kv-S7b" firstAttribute="top" secondItem="6uM-18-tdv" secondAttribute="bottom" constant="16" id="EFV-6A-2sO"/>
                     <constraint firstItem="6uM-18-tdv" firstAttribute="leading" secondItem="Lmy-xx-jYY" secondAttribute="leading" constant="32" id="LQh-6z-ty6"/>
                     <constraint firstItem="LZA-kv-S7b" firstAttribute="leading" secondItem="Lmy-xx-jYY" secondAttribute="leading" constant="28" id="UEJ-0h-57P"/>

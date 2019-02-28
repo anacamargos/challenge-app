@@ -29,6 +29,7 @@
 		ED89E35022248952005D93DD /* RestaurantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E34F22248952005D93DD /* RestaurantCollectionViewCell.swift */; };
 		ED89E35C2224A203005D93DD /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E35B2224A203005D93DD /* NetworkServices.swift */; };
 		ED89E35E2224AB61005D93DD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E35D2224AB61005D93DD /* Models.swift */; };
+		EDD1C21D2228614D003CCBD5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1C21C2228614D003CCBD5 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		ED89E34F22248952005D93DD /* RestaurantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCollectionViewCell.swift; sourceTree = "<group>"; };
 		ED89E35B2224A203005D93DD /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		ED89E35D2224AB61005D93DD /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		EDD1C21C2228614D003CCBD5 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				ED89E35B2224A203005D93DD /* NetworkServices.swift */,
+				EDD1C21C2228614D003CCBD5 /* API.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				ED89E3112224526F005D93DD /* ViewController.swift in Sources */,
 				ED89E30F2224526F005D93DD /* AppDelegate.swift in Sources */,
 				ED89E348222486A1005D93DD /* DetailsViewController.swift in Sources */,
+				EDD1C21D2228614D003CCBD5 /* API.swift in Sources */,
 				ED89E35022248952005D93DD /* RestaurantCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

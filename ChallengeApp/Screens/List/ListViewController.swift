@@ -13,8 +13,8 @@ class ListViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let service = MoyaProvider<HotmartService.ListLocationsProvider>()
-    let jsonDecoder = JSONDecoder()
+//    let service = MoyaProvider<HotmartService.ListLocationsProvider>()
+//    let jsonDecoder = JSONDecoder()
     
     var locations = [Location] ( ) {
         didSet  {
@@ -30,22 +30,11 @@ class ListViewController: UIViewController, UICollectionViewDelegate, UICollecti
         collectionView.delegate = self
         
         //Carregar a lista
-        loadListLocations()
-        
-    }
-    
-    private func loadListLocations() {
-        service.request(.search() ) { (result) in
-            switch result {
-            case .success(let response):
- 
-                let root = try? self.jsonDecoder.decode(Root.self, from: response.data)
-                self.locations = root?.listLocations ?? []
-                
-            case .failure(let error):
-                print("Error: \(error)")
-            }
+        API.loadListLocations { (location) in
+            self.locations = location
         }
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

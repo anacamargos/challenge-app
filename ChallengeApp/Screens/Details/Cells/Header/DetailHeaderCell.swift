@@ -21,14 +21,16 @@ class DetailHeaderCell: UITableViewCell {
     @IBOutlet weak var starFour: UIImageView!
     @IBOutlet weak var starFive: UIImageView!
     
-    func configure(details: Details) {
+    func configure(details: Details?) {
         
-        nameLabel.text = details.name
+        guard let safeDetails = details else { return }
+        
+        nameLabel.text = safeDetails.name
         //typeLabel.text = location.type
-        ratingLabel.text = "\(details.review)"
-        rating(review: details.review)
+        ratingLabel.text = "\(safeDetails.review)"
+        rating(review: safeDetails.review)
         
-        restaurantImage.image = UIImage(url: URL(string: "https://pt.sonestapiyucay.com/cache/a3/a1/a3a1b928b1029b9dc5921a120819fefc.jpg"))!
+        restaurantImage?.image = UIImage(url: URL(string: "https://pt.sonestapiyucay.com/cache/a3/a1/a3a1b928b1029b9dc5921a120819fefc.jpg"))!
     }
     
     func rating(review: Double) {
@@ -77,11 +79,11 @@ class DetailHeaderCell: UITableViewCell {
             imageNameFive = "smallStarOn"
         }
         
-        self.starOne.image = UIImage(named: imageNameOne)
-        self.starTwo.image = UIImage(named: imageNameTwo)
-        self.starThree.image = UIImage(named: imageNameThree)
-        self.starFour.image = UIImage(named: imageNameFour)
-        self.starFive.image = UIImage(named: imageNameFive)
+        self.starOne?.image = UIImage(named: imageNameOne)
+        self.starTwo?.image = UIImage(named: imageNameTwo)
+        self.starThree?.image = UIImage(named: imageNameThree)
+        self.starFour?.image = UIImage(named: imageNameFour)
+        self.starFive?.image = UIImage(named: imageNameFive)
         
         
     }

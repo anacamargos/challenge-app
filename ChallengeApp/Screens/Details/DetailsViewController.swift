@@ -7,16 +7,13 @@
 //
 
 import UIKit
-import Moya
+//import Moya
 
 class DetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    //@IBOutlet weak var detailsView: DetailsView!
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var navigationBar: UINavigationBar!
     
-    
-    let service = MoyaProvider<HotmartService.ListLocationsProvider>()
-    let jsonDecoder = JSONDecoder()
     
     var detailsData: Details!
     
@@ -36,39 +33,26 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.register(UINib(nibName: "DetailHeaderCell", bundle: nil), forCellReuseIdentifier: "DetailHeaderCell")
         tableView.register(UINib(nibName: "DetailAboutCell", bundle: nil), forCellReuseIdentifier: "DetailAboutCell")
         tableView.register(UINib(nibName: "DetailPhotoCell", bundle: nil), forCellReuseIdentifier: "DetailPhotoCell")
+        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 600
+        
+        
+
+
+        
+        
     }
     
     func updateView() {
         
         // Carregar a lista
-        loadDetails(withId: locationId) { (details) in
-            
+        API.loadDetails(withId: locationId) { (details) in
             self.detailsData = details
-            debugPrint(self.detailsData)
+            // configurar a celula
+            self.tableView.reloadData()
         }
     }
-    
-    private func loadDetails(withId id: Int, callBack: @escaping (Details?) -> Void) {
-        service.request(.details(id: id)) { [weak self] (result) in
-            switch result {
-            case .success(let response):
-                
-                if let details = try? self?.jsonDecoder.decode(Details.self, from: response.data) {
-                    print("\n\n\n Details aqui: \(details)")
-                    callBack(details)
-                    //debugPrint(details)
-                } else {
-                    //print("Entrei aqui")
-                    callBack(nil)
-                    
-                }
-                
-            case .failure(let error):
-                print("Error: \(error)")
-            }
-        }
-    }
-    
     
     // MARK: - table view data source
     
@@ -80,30 +64,15 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DetailHeaderCell", for: indexPath) as! DetailHeaderCell
-            //cell.configure(details: detailsData)
+            cell.configure(details: detailsData)
             return cell
         } else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DetailPhotoCell", for: indexPath) as! DetailPhotoCell
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DetailAboutCell", for: indexPath) as! DetailAboutCell
-            //cell.configure(details: detailsData)
+            cell.configure(details: detailsData)
             return cell
         }
-        
-
     }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        var height = 0
-        if indexPath.row == 0 {
-            height = 402
-        } else if indexPath.row == 1 {
-            height = 130
-        } else if indexPath.row == 2 {
-            height = 360
-        }
-        return CGFloat(height)
-    }
-    
 }

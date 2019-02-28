@@ -31,6 +31,10 @@ class DetailPhotoCell: UITableViewCell, UICollectionViewDataSource, UICollection
         // Initialization code
         //collectionView.register(UINib(nibName: "DetailsPhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PhotoCollectionViewCell")
         self.collectionView.register(UINib(nibName: "DetailsPhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PhotoCollectionViewCell")
+        
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
+        self.collectionView.backgroundColor = UIColor.clear
 
     }
 
