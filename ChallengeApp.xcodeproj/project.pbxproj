@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		825158137D1ADF696F4A7C2B /* Pods_ChallengeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9B0B49610475A17966C314 /* Pods_ChallengeApp.framework */; };
-		ED6F82CD2226F4F500F37491 /* Open_Sans in Resources */ = {isa = PBXBuildFile; fileRef = ED6F82CC2226F4F500F37491 /* Open_Sans */; };
 		ED6F82D22227269700F37491 /* DetailHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED6F82D12227269700F37491 /* DetailHeaderCell.xib */; };
 		ED6F82D4222726B900F37491 /* DetailHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6F82D3222726B900F37491 /* DetailHeaderCell.swift */; };
 		ED6F82DA22272D5900F37491 /* DetailPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED6F82D922272D5900F37491 /* DetailPhotoCell.xib */; };
@@ -30,6 +29,7 @@
 		ED89E35C2224A203005D93DD /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E35B2224A203005D93DD /* NetworkServices.swift */; };
 		ED89E35E2224AB61005D93DD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E35D2224AB61005D93DD /* Models.swift */; };
 		EDD1C21D2228614D003CCBD5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1C21C2228614D003CCBD5 /* API.swift */; };
+		EDD1C21F22288471003CCBD5 /* Open_Sans in Resources */ = {isa = PBXBuildFile; fileRef = EDD1C21E22288471003CCBD5 /* Open_Sans */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,6 @@
 		81A4B63F63A13C5D6FBFEB98 /* Pods-ChallengeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeApp.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeApp/Pods-ChallengeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8E9B0B49610475A17966C314 /* Pods_ChallengeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76328F7280F4540A928DAD7 /* Pods-ChallengeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeApp.release.xcconfig"; path = "Target Support Files/Pods-ChallengeApp/Pods-ChallengeApp.release.xcconfig"; sourceTree = "<group>"; };
-		ED6F82CC2226F4F500F37491 /* Open_Sans */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Open_Sans; path = ../../../../Downloads/Open_Sans; sourceTree = "<group>"; };
 		ED6F82D12227269700F37491 /* DetailHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHeaderCell.xib; sourceTree = "<group>"; };
 		ED6F82D3222726B900F37491 /* DetailHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderCell.swift; sourceTree = "<group>"; };
 		ED6F82D922272D5900F37491 /* DetailPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailPhotoCell.xib; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 		ED89E35B2224A203005D93DD /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		ED89E35D2224AB61005D93DD /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		EDD1C21C2228614D003CCBD5 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		EDD1C21E22288471003CCBD5 /* Open_Sans */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Open_Sans; path = ../../../../Downloads/Open_Sans; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +176,7 @@
 		ED89E3022224526F005D93DD = {
 			isa = PBXGroup;
 			children = (
-				ED6F82CC2226F4F500F37491 /* Open_Sans */,
+				EDD1C21E22288471003CCBD5 /* Open_Sans */,
 				ED89E30D2224526F005D93DD /* ChallengeApp */,
 				ED89E32222245270005D93DD /* ChallengeAppTests */,
 				ED89E32D22245270005D93DD /* ChallengeAppUITests */,
@@ -383,11 +383,11 @@
 				ED89E31922245270005D93DD /* LaunchScreen.storyboard in Resources */,
 				ED89E31622245270005D93DD /* Assets.xcassets in Resources */,
 				ED6F82E4222744E300F37491 /* DetailsPhotoCollectionViewCell.xib in Resources */,
-				ED6F82CD2226F4F500F37491 /* Open_Sans in Resources */,
 				ED6F82E022272FC100F37491 /* DetailAboutCell.xib in Resources */,
 				ED6F82DA22272D5900F37491 /* DetailPhotoCell.xib in Resources */,
 				ED89E3142224526F005D93DD /* Main.storyboard in Resources */,
 				ED6F82D22227269700F37491 /* DetailHeaderCell.xib in Resources */,
+				EDD1C21F22288471003CCBD5 /* Open_Sans in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

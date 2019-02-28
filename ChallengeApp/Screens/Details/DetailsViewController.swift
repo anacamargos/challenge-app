@@ -51,8 +51,11 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
             self.detailsData = details
             // configurar a celula
             self.tableView.reloadData()
+
+            debugPrint(self.detailsData)
         }
     }
+    
     
     // MARK: - table view data source
     
