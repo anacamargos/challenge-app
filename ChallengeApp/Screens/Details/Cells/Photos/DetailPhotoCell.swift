@@ -10,9 +10,6 @@ import UIKit
 
 class DetailPhotoCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate{
 
-
-    
-    
     @IBOutlet weak var collectionView: UICollectionView!
     
     var images = [
@@ -28,8 +25,6 @@ class DetailPhotoCell: UITableViewCell, UICollectionViewDataSource, UICollection
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        //collectionView.register(UINib(nibName: "DetailsPhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PhotoCollectionViewCell")
         self.collectionView.register(UINib(nibName: "DetailsPhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PhotoCollectionViewCell")
         
         self.collectionView.dataSource = self
@@ -45,7 +40,7 @@ class DetailPhotoCell: UITableViewCell, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -54,5 +49,4 @@ class DetailPhotoCell: UITableViewCell, UICollectionViewDataSource, UICollection
         cell.restaurantImageView.image = images[indexPath.row]
         return cell
     }
-
 }

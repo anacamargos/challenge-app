@@ -17,7 +17,6 @@
 		ED6F82E4222744E300F37491 /* DetailsPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED6F82E3222744E300F37491 /* DetailsPhotoCollectionViewCell.xib */; };
 		ED6F82E72227452F00F37491 /* DetailsPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6F82E62227452F00F37491 /* DetailsPhotoCollectionViewCell.swift */; };
 		ED89E30F2224526F005D93DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E30E2224526F005D93DD /* AppDelegate.swift */; };
-		ED89E3112224526F005D93DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89E3102224526F005D93DD /* ViewController.swift */; };
 		ED89E3142224526F005D93DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED89E3122224526F005D93DD /* Main.storyboard */; };
 		ED89E31622245270005D93DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED89E31522245270005D93DD /* Assets.xcassets */; };
 		ED89E31922245270005D93DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED89E31722245270005D93DD /* LaunchScreen.storyboard */; };
@@ -63,7 +62,6 @@
 		ED6F82E62227452F00F37491 /* DetailsPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		ED89E30B2224526F005D93DD /* ChallengeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED89E30E2224526F005D93DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED89E3102224526F005D93DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED89E3132224526F005D93DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED89E31522245270005D93DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED89E31822245270005D93DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 				ED89E35A2224A1F3005D93DD /* Services */,
 				ED89E34022247590005D93DD /* Screens */,
 				ED89E30E2224526F005D93DD /* AppDelegate.swift */,
-				ED89E3102224526F005D93DD /* ViewController.swift */,
 				ED89E3122224526F005D93DD /* Main.storyboard */,
 				ED89E31522245270005D93DD /* Assets.xcassets */,
 				ED89E31722245270005D93DD /* LaunchScreen.storyboard */,
@@ -472,7 +469,6 @@
 				ED6F82E72227452F00F37491 /* DetailsPhotoCollectionViewCell.swift in Sources */,
 				ED89E34C22248834005D93DD /* ListViewController.swift in Sources */,
 				ED6F82DE22272F8F00F37491 /* DetailPhotoCell.swift in Sources */,
-				ED89E3112224526F005D93DD /* ViewController.swift in Sources */,
 				ED89E30F2224526F005D93DD /* AppDelegate.swift in Sources */,
 				ED89E348222486A1005D93DD /* DetailsViewController.swift in Sources */,
 				EDD1C21D2228614D003CCBD5 /* API.swift in Sources */,

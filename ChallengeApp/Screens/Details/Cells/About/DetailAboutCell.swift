@@ -12,29 +12,21 @@ class DetailAboutCell: UITableViewCell {
     
     @IBOutlet weak var aboutLabel: UILabel!
     @IBOutlet weak var hoursLabel: UILabel!
-    //@IBOutlet weak var hoursLabel: UITextView!
-   // @IBOutlet weak var hoursLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     public func configure(details: Details?) {
         
         guard let safeDetails = details else { return }
-        
-        
-        
         aboutLabel.text = safeDetails.about
         let font = UIFont(name: "Helvetica", size: 16.0)
         var height = heightForView(text: safeDetails.about, font: font!, width: aboutLabel.frame.width)
@@ -51,9 +43,6 @@ class DetailAboutCell: UITableViewCell {
         
         phoneLabel.text = "\(safeDetails.phone)"
         addressLabel.text = "\(safeDetails.adress)"
-        
-        
-        
     }
 
     func heightForView(text:String, font:UIFont, width:CGFloat) -> CGFloat{
@@ -103,13 +92,6 @@ class DetailAboutCell: UITableViewCell {
     }
 
 }
-
-
-//struct DayWithName {
-//    var name: String?
-//    var open: String?
-//    var close: String?
-//}
 
 extension CGRect{
     init(_ x:CGFloat,_ y:CGFloat,_ width:CGFloat,_ height:CGFloat) {

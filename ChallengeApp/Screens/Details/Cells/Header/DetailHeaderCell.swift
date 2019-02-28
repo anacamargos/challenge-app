@@ -26,7 +26,6 @@ class DetailHeaderCell: UITableViewCell {
         guard let safeDetails = details else { return }
         
         nameLabel.text = safeDetails.name
-        //typeLabel.text = location.type
         ratingLabel.text = "\(safeDetails.review)"
         rating(review: safeDetails.review)
         
@@ -84,10 +83,5 @@ class DetailHeaderCell: UITableViewCell {
         self.starThree?.image = UIImage(named: imageNameThree)
         self.starFour?.image = UIImage(named: imageNameFour)
         self.starFive?.image = UIImage(named: imageNameFive)
-        
-        
     }
-    
-    
-    
 }

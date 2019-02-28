@@ -36,12 +36,6 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 600
-        
-        
-
-
-        
-        
     }
     
     func updateView() {
