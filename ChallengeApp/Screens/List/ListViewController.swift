@@ -31,9 +31,9 @@ class ListViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         
-        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 5, right: 5)
+        //layout.sectionInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
         //layout.minimumLineSpacing = 5
-        layout.itemSize = CGSize(width: (self.collectionView.frame.size.width + 15)/2, height: 252)
+        //layout.itemSize = CGSize(width: 170, height: 252)
         
         //self.navigationController?.navigationBar.tintColor = UIColor.white
         
@@ -89,16 +89,16 @@ class ListViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
 }
 
-//extension ListViewController: UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//
-//        let numberOfColumns: CGFloat = 2
-//        let width = collectionView.frame.size.width
-//        let xInsets: CGFloat = 10
-//        let cellSpacing: CGFloat = 5
-//
-//        return CGSize(width: (width/numberOfColumns) - (xInsets + cellSpacing) , height: 252)
-//        //return CGSize(width: 150, height: 252)
-//    }
-//}
+extension ListViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        let numberOfColumns: CGFloat = 2
+        let width = collectionView.frame.size.width
+        let xInsets: CGFloat = 10
+        let cellSpacing: CGFloat = 10
+
+        return CGSize(width: (width/numberOfColumns) - (xInsets + cellSpacing) , height: 252)
+        //return CGSize(width: 150, height: 252)
+    }
+}
 
