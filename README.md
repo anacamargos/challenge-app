@@ -3,6 +3,8 @@
 
 ### Como executar o projeto
 
+Para executar o projeto rode no terminal os seguintes comandos:
+
 ``````
 git clone https://github.com/anacamargos/challenge-app.git
 
