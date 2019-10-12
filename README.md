@@ -1,17 +1,17 @@
-# App Desafio
+# Challenge App
 
-O projeto consiste em um aplicativo iOS que exibe na tela algumas localizações, como restaurantes, padarias, coworkings, entre outros. Além disso também é possível visualizar os detalhes de cada localização, como algumas fotos disponibilizadas, a sua classificação, uma descrição do local, os horários de funcionamento, seu telefone e endereço.
+The project consists of an iOS application that displays on the screen some locations, such as restaurants, bakeries, coworkings, among others. In addition you can also view the details of each location, such as some photos, the place rating, a description of the place, opening hours, its phone and address.
 
-Para ter acesso a todos esses dados, a aplicação consumiu uma API disponibilizada pela Hotmart.
+To access all this data, the application consumed an API provided by Hotmart.
 
-### Como executar o projeto
+### How to run the project
 
-Para executar o projeto rode no terminal os seguintes comandos:
+To run the project run the following commands in terminal:
 
 ``````
 git clone https://github.com/anacamargos/challenge-app.git
 
-cd challenge-app (para a pasta clonada)
+cd challenge-app (to cloned folder)
 
 open ChallengeApp.xcworkspace
 ``````
